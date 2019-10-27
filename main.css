@@ -40,7 +40,10 @@ main {
 }
 
 header {
-    background: url(../images/wireframe-image.jpg) no-repeat center center;
+    background-image: url('../images/wireframe-image.jpg');
+    background-repeat: no-repeat; 
+    background-position-x: center;
+    background-position-y: center;
     height: 470px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
