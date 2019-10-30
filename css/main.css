@@ -36,6 +36,10 @@ li {
     list-style: none;
 }
 
+.nav-links:focus {
+    border-bottom: 5px solid #EFE375;
+}
+
 .nav-links:hover {
     color: #EFE375;
     cursor: pointer;
@@ -146,6 +150,15 @@ hr {
     font-size: 1.5em;
 }
 
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+}
+
 .buttons {
     height: 50px;
     width: 90%;
@@ -174,6 +187,13 @@ hr {
     background-color: #5745A3;
     border: 2px solid white;
     cursor: pointer;
+    color: white;
+    transition: 0.3s;
+}
+
+.buttons > a:focus {
+    background-color: #5745A3;
+    border: 2px solid white;
     color: white;
     transition: 0.3s;
 }
@@ -215,6 +235,11 @@ hr {
 }
 
 .contact-icons > a:hover {
+    color: #EFE375;
+    transition: 0.3s;
+}
+
+.contact-icons > a:focus {
     color: #EFE375;
     transition: 0.3s;
 }
@@ -416,6 +441,51 @@ footer {
 
 }
 
+@media screen and (min-width: 1600px) {
+
+    .intro {
+        height: 460px;
+        width: 700px;
+    }
+
+    .intro > h1 {
+        font-size: 5em;
+    }
+    
+    .intro > h2 {
+        font-size: 3em;
+    }
+
+    .about-info {
+        font-size: 1.3em;
+        line-height: 1.5em;
+        height: 600px;
+        width: 700px;
+    }
+
+    .portfolio-images {
+        height: 650px;
+        width: 500px;
+        float: left;
+    }
+
+    .portfolio-info {
+        font-size: 1.3em;
+        height: 900px;
+        width: 1000px;
+    }
+
+    .buttons {
+        width: 40%;
+    }
+
+    .contact-info {
+        height: 532px;
+        width: 800px;
+    }
+
+}
+
 @media screen and (min-height: 665px) {
     header {
         min-height: 580px;
@@ -497,5 +567,11 @@ footer {
 @media screen and (min-height: 1365px) {
     header {
         min-height: 1278px;
+    }
+}
+
+@media screen and (min-height: 1842px) {
+    header {
+        min-height: 1755px;
     }
 }

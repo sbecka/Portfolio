@@ -8,7 +8,7 @@
     <title>Sabrina Becker</title>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
+    <!--Links to Google Fonts and Font Awesome-->
     <link href="https://fonts.googleapis.com/css?family=ABeeZee|Delius|Caveat:400,700|Josefin+Slab:400,600,700&display=swap" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 </head>
@@ -16,18 +16,18 @@
     <nav role="navigation">
         <ul>
             <li>
-                <a class="nav-links selected js-nav-home"><i class="fas fa-home"></i></a>
+                <a tabindex="0" class="nav-links selected js-nav-home"><i class="fas fa-home" aria-hidden="true" aria-label="Link to open home page"></i></a>
             </li>
             <li>
-                <a class="nav-links selected js-nav-about">About</a>
+                <a tabindex="0" class="nav-links selected js-nav-about">About</a>
             </li>
             <li>
-                <a class="nav-links selected js-nav-portfolio">Portfolio</a>
+                <a tabindex="0" class="nav-links selected js-nav-portfolio">Portfolio</a>
             </li>
             <li>
-                <a class="nav-links selected js-nav-contact">Contact</a>
+                <a tabindex="0" class="nav-links selected js-nav-contact">Contact</a>
             </li>
-        </ul>
+        </ul>   
     </nav>
 
     <main role="main">
@@ -55,7 +55,7 @@
                     <img class="project-image" src="images/Final Score Halloween Quiz Small Screen.png" alt="Screenshot of Halloween Quiz App Final Score Page">
                 </div>
                 <h3>Halloween Quiz App</h3>
-                <p><strong>Technologies:</strong> <i class="fab fa-html5"></i> <i class="fab fa-css3"></i> <i class="fab fa-js"></i></p>
+                <p><strong>Technologies:</strong> <i class="fab fa-html5" aria-hidden="true"></i><span class="sr-only">HTML5</span> <i class="fab fa-css3" aria-hidden="true"></i><span class="sr-only">CSS3</span> <i class="fab fa-js" aria-hidden="true"></i><span class="sr-only">JavaScript</span></p>
                 <p class="project-description">This is a quiz about Halloween trivia. Users will get a response to the answers they choose and get their final score at the end of the quiz. Question number and user’s score is tracked at the top of the quiz. The quiz can be restarted if the user wants to retake the quiz.</p>     
                 
                 <!--Buttons Here-->
@@ -71,9 +71,9 @@
                 <h1>Get In Touch</h1>
                 <h2>Feel free to contact me by email or view my links below.</h2>
                 <div class="contact-icons">
-                    <a href="mailto:sbecka8@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.linkedin.com/in/sabrina-becker-521627112" target="_blank"><i class="fab fa-linkedin"></i></a>
-                    <a href="https://github.com/sPro1ly0"><i class="fab fa-github" targe="_blank"></i></a>
+                    <a href="mailto:sbecka8@gmail.com"><i class="fas fa-envelope" aria-hidden="true" aria-label="Link to open your email and send an email to Sabrina Becker's email address"></i></a>
+                    <a href="https://www.linkedin.com/in/sabrina-becker-521627112" target="_blank" aria-label="Link to open Sabrina Becker's Linked In profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+                    <a href="https://github.com/sPro1ly0" target="_blank" aria-label="Link to open Sabrina Becker's GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
             </div>
         </section>
