@@ -73,6 +73,7 @@ main {
     justify-content: center;
     align-items: center;
     height: calc(100vh - 90px);
+    background-color: #5745A3;
 }
 
 .intro {
