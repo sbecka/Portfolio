@@ -330,6 +330,16 @@ footer {
 
 }
 
+@media screen and (min-height: 520px) {
+    .portfolio-images {
+        margin-bottom: 50px;
+    }
+
+    .contact-info {
+        height: 75vh;
+    }
+}
+
 @media screen and (min-width: 672px) {
     .intro {
         height: 300px;
