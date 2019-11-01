@@ -5,6 +5,7 @@
 body {
     background-color:#AAB2ED;
     margin: 0;
+    height: 100%;
 }
 
 /***Navigation Bar*****/
@@ -36,6 +37,11 @@ li {
     list-style: none;
 }
 
+.nav-links {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .nav-links:focus {
     border-bottom: 5px solid #EFE375;
 }
@@ -59,14 +65,14 @@ main {
 }
 
 /*****Intro Headline Banner *****/
-header {
+.home {
     background-image: url('../images/background-lights.jpg');
     background-repeat: repeat; 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 566px;
+    height: calc(100vh - 90px);
 }
 
 .intro {
@@ -100,9 +106,10 @@ header {
 
 .about-info {
     width: 280px;
-    height: 570px;
+    height: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 40px;
     font-size: 1em;
     line-height: 1.15em;
 }
@@ -110,10 +117,11 @@ header {
 /***Portfolio Content*****/
 .portfolio-info {
     width: 280px;
-    height: 800px;
+    height: 100%;
     line-height: 1.18em;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 40px;
 }
 
 .portfolio-title {
@@ -121,6 +129,8 @@ header {
     font-weight: 700;
     text-align: center;
     font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #5745A3;
 }
 
 .portfolio-images {
@@ -137,12 +147,6 @@ header {
 h3 {
     text-align: center;
     font-size: 1.5em;
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #5745A3;
-    margin-bottom: 26px;
 }
 
 .fa-html5, .fa-css3, .fa-js {
@@ -207,7 +211,7 @@ hr {
     margin-left: auto;
     margin-right: auto;
     width: 280px;
-    height: 500px;
+    height: calc(100vh - 90px);
 }
 
 .contact-info > h1 {
@@ -280,8 +284,7 @@ footer {
 
     .about-info {
         font-size: 1.3em;
-        line-height: 1.4em;
-        height: 650px;
+        line-height: 1.4em; 
         width: 530px;
         margin-top: 50px;
     }
@@ -294,14 +297,9 @@ footer {
         font-size: 2.5em;
     }
 
-    hr {
-        border-top: 3px solid #5745A3;
-        margin-bottom: 46px;
-    }
-
     .portfolio-info {
         font-size: 1.3em;
-        height: 1400px;
+        margin-bottom: 60px;
         width: 530px;
         line-height: 1.4em;
     }
@@ -314,8 +312,8 @@ footer {
     .contact-info {
         bottom: 90px;
         line-height: 3.2em;
-        height: 600px;
         width: 530px;
+        height: 50vh;
     }
 
     .contact-info > h1 {
@@ -353,7 +351,6 @@ footer {
         font-size: 1.3em;
         line-height: 1.5em;
         width: 700px;
-        height: 810px;
     }
 
     .portfolio-images {
@@ -367,7 +364,6 @@ footer {
 
     .portfolio-info {
         font-size: 1.3em;
-        height: 1720px;
         width: 700px;
     }
 
@@ -377,7 +373,6 @@ footer {
     }
 
     .contact-info {
-        height: 532px;
         width: 700px;
     }
 
@@ -392,7 +387,6 @@ footer {
 
     .portfolio-info {
         font-size: 1.3em;
-        height: 800px;
         width: 800px;
     }
 
@@ -414,7 +408,6 @@ footer {
     .about-info {
         font-size: 1.3em;
         line-height: 1.5em;
-        height: 600px;
         width: 700px;
     }
 
@@ -426,7 +419,6 @@ footer {
 
     .portfolio-info {
         font-size: 1.3em;
-        height: 900px;
         width: 1000px;
     }
 
@@ -435,7 +427,6 @@ footer {
     }
 
     .contact-info {
-        height: 532px;
         width: 800px;
     }
 
@@ -459,7 +450,6 @@ footer {
     .about-info {
         font-size: 1.3em;
         line-height: 1.5em;
-        height: 600px;
         width: 700px;
     }
 
@@ -470,8 +460,7 @@ footer {
     }
 
     .portfolio-info {
-        font-size: 1.3em;
-        height: 900px;
+        font-size: 1.3em; 
         width: 1000px;
     }
 
@@ -480,98 +469,7 @@ footer {
     }
 
     .contact-info {
-        height: 532px;
         width: 800px;
     }
 
-}
-
-@media screen and (min-height: 665px) {
-    header {
-        min-height: 580px;
-    }
-}
-
-@media screen and (min-height: 681px) {
-    header {
-        min-height: 600px;
-    }
-}
-
-@media screen and (min-height: 681px) {
-    header {
-        min-height: 610px;
-    }
-}
-
-@media screen and (min-height: 712px) {
-    header {
-        min-height: 638px;
-    }
-}
-
-@media screen and (min-height: 730px) {
-    header {
-        min-height: 642px;
-    }
-}
-
-@media screen and (min-height: 735px) {
-    header {
-        min-height: 648px;
-    }
-}
-
-@media screen and (min-height: 744px) {
-    header {
-        min-height: 657px;
-    }
-}
-
-@media screen and (min-height: 800px) {
-    header {
-        min-height: 723px;
-    }
-}
-
-@media screen and (min-height: 810px) {
-    header {
-        min-height: 746px;
-    }
-}
-
-@media screen and (min-height: 898px) {
-    header {
-        min-height: 811px;
-    }
-}
-
-@media screen and (min-height: 950px) {
-    header {
-        min-height: 862px;
-    }
-}
-
-@media screen and (min-height: 1023px) {
-    header {
-        min-height: 935px;
-    }
-}
-
-@media screen and (min-height: 1250px) {
-    header {
-        min-height: 1164px;
-    }
-}
-
-@media screen and (min-height: 1365px) {
-    header {
-        min-height: 1278px;
-    }
-}
-
-@media screen and (min-height: 1842px) {
-    header {
-        min-height: 1755px;
-    }
 }

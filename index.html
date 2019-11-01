@@ -13,31 +13,35 @@
     <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav role="navigation">
-        <ul>
-            <li>
-                <a tabindex="0" class="nav-links selected js-nav-home"><i class="fas fa-home" aria-hidden="true" aria-label="Link to open home page"></i></a>
-            </li>
-            <li>
-                <a tabindex="0" class="nav-links selected js-nav-about">About</a>
-            </li>
-            <li>
-                <a tabindex="0" class="nav-links selected js-nav-portfolio">Portfolio</a>
-            </li>
-            <li>
-                <a tabindex="0" class="nav-links selected js-nav-contact">Contact</a>
-            </li>
-        </ul>   
-    </nav>
+    <header>
+        <nav role="navigation">
+            <ul>
+                <li>
+                    <a tabindex="0" class="nav-links selected js-nav-home"><i class="fas fa-home" aria-hidden="true" aria-label="Link to open home page"></i></a>
+                </li>
+                <li>
+                    <a tabindex="0" class="nav-links selected js-nav-about">About</a>
+                </li>
+                <li>
+                    <a tabindex="0" class="nav-links selected js-nav-portfolio">Portfolio</a>
+                </li>
+                <li>
+                    <a tabindex="0" class="nav-links selected js-nav-contact">Contact</a>
+                </li>
+            </ul>   
+        </nav>
+    </header>
 
     <main role="main">
-        <header role="banner" class="js-home">
-            <div class="intro">
-                <h2>HELLO,</h2>
-                <h1>I'm Sabrina.</h1>
-                <h2>A WEB DEVELOPER.</h2>
+        <section role="banner">
+            <div class="home js-home">
+                <div class="intro">
+                    <h2>HELLO,</h2>
+                    <h1>I'm Sabrina.</h1>
+                    <h2>A WEB DEVELOPER.</h2>
+                </div>
             </div>
-        </header>
+        </section>
 
         <section role="region">
             <div class="about-info js-about">
@@ -49,8 +53,7 @@
 
         <section role="region">
             <div class="portfolio-info js-portfolio">
-                <h2 class="portfolio-title">MY PROJECTS</h2>
-                <hr>
+                <h1 class="portfolio-title">MY PROJECTS</h1>
                 <div class="portfolio-images">
                     <img class="project-image" src="images/Final Score Halloween Quiz Small Screen.png" alt="Screenshot of Halloween Quiz App Final Score Page">
                 </div>
@@ -71,7 +74,7 @@
                 <h1>Get In Touch</h1>
                 <h2>Feel free to contact me by email or view my links below.</h2>
                 <div class="contact-icons">
-                    <a href="mailto:sbecka8@gmail.com"><i class="fas fa-envelope" aria-hidden="true" aria-label="Link to open your email and send an email to Sabrina Becker's email address"></i></a>
+                    <a href="mailto:sbecka8@gmail.com" aria-label="Link to open your email and send an email to Sabrina Becker's email address"><i class="fas fa-envelope" aria-hidden="true"></i></a>
                     <a href="https://www.linkedin.com/in/sabrina-becker-521627112" target="_blank" aria-label="Link to open Sabrina Becker's Linked In profile"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
                     <a href="https://github.com/sPro1ly0" target="_blank" aria-label="Link to open Sabrina Becker's GitHub profile"><i class="fab fa-github" aria-hidden="true"></i></a>
                 </div>
