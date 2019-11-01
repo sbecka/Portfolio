@@ -393,6 +393,7 @@ footer {
         height: 600px;
         width: 450px;
         float: left;
+        margin-bottom: 50px;
     }
 
     .portfolio-info {
