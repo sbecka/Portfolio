@@ -114,6 +114,13 @@ main {
     line-height: 1.15em;
 }
 
+.about-info > h1 {
+    font-size: 2.3em;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
+}
+
 /***Portfolio Content*****/
 .portfolio-info {
     width: 280px;
@@ -144,7 +151,7 @@ main {
     border-radius: 5px;
 }
 
-h3 {
+.portfolio-info > h2 {
     text-align: center;
     font-size: 1.5em;
 }
@@ -220,7 +227,7 @@ h3 {
     text-align: center;
 }
 
-.contact-info > h2 {
+.contact-info > p {
     font-size: 2em;
     color: white;
     text-align: center;
@@ -263,9 +270,9 @@ footer {
 }
 
 .copyright {
-    color: #AAB2ED;
+    color: #FFFFFF;
     font-family: 'AbeeZee', Georgia, 'Times New Roman', Times, serif;
-    font-size: 0.75em;
+    font-size: 1em;
     margin: 0;
     text-align: center;
 }
