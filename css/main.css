@@ -141,9 +141,24 @@ main {
     border-bottom: 3px solid #5745A3;
 }
 
+.project {
+    margin-bottom: 20px;
+}
+
 .portfolio-images {
     display: flex;
     justify-content: center;
+}
+
+.portfolio-images-hike {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-image-hike {
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 
 .project-image {
@@ -157,9 +172,17 @@ main {
     font-size: 1.5em;
 }
 
+.technology {
+    color: white;
+}
+
 .fa-html5, .fa-css3, .fa-js {
     color: white;
     font-size: 1.5em;
+}
+
+strong {
+    color: black;
 }
 
 .sr-only {
@@ -361,6 +384,10 @@ footer {
     .intro > h2 {
         font-size: 2.3em;
     }
+
+    .project {
+        margin-bottom: 70px;
+    }
 }
 
 @media screen and (min-width: 790px) {
@@ -408,6 +435,23 @@ footer {
     
     .intro > h2 {
         font-size: 2.6em;
+    }
+
+    .project {
+        height: 550px;
+        width: 800px;
+        margin-bottom: 20px;
+    }
+
+    .portfolio-images-hike {
+        float: right;
+        height: 460px;
+        width: 450px;
+    }
+
+    .project-image-hike {
+        height: 450px;
+        width: 200px;
     }
 
     .portfolio-images {
