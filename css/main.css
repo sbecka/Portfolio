@@ -487,6 +487,25 @@ footer {
         width: 700px;
     }
 
+    .portfolio-images-hike {
+        float: right;
+        height: 460px;
+        width: 530px;
+    }
+
+    .project-image-hike {
+        height: 490px;
+        width: 240px;
+    }
+
+    .project {
+        height: 600px;
+        width: 900px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .portfolio-images {
         height: 650px;
         width: 500px;
