@@ -130,6 +130,8 @@ function clickingOnNavLinks() {
     clickPorfolio();
     clickContact();
 
+    let currentYear = new Date().getFullYear();
+    document.getElementById("copyright").innerHTML = `©${currentYear} Sabrina Becker`; 
 };
 
 $(clickingOnNavLinks);
