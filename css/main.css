@@ -567,6 +567,10 @@ footer {
         margin-right: auto;
     }
 
+    .project:last-child {
+        margin-bottom: 90px;
+    }
+
     .portfolio-images {
         height: 650px;
         width: 500px;
