@@ -5,14 +5,15 @@
 body {
     background-color:#AAB2ED;
     margin: 0;
-    height: 100%;
+    min-height: 100vh;
+    position: relative;
 }
 
 /***Navigation Bar*****/
 nav {
     background-color: #5745A3;
-    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
-    font-weight: 700;
+    font-family: 'Bitter', Arial, Helvetica, sans-serif;
+    font-weight: 400;
     position: fixed;
     top: 0;
     padding-left: 5px;
@@ -44,6 +45,7 @@ li {
 
 .nav-links:focus {
     border-bottom: 5px solid #EFE375;
+    outline: hidden;
 }
 
 .nav-links:hover {
@@ -59,9 +61,6 @@ li {
 
 main {
     font-family: 'AbeeZee', Georgia, 'Times New Roman', Times, serif;
-    position: relative;
-    top: 60px;
-    width: 100%;
 }
 
 /*****Intro Headline Banner *****/
@@ -72,7 +71,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 90px);
+    height: 100vh;
     background-color: #5745A3;
 }
 
@@ -97,9 +96,9 @@ main {
 }
 
 .intro > h2 {
-    font-family: 'Josefin Slab', 'Times New Romans', 'serif';
+    font-family: 'Bitter', 'Times New Romans', 'serif';
     font-size: 1.8em;
-    font-weight: 700;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -107,42 +106,38 @@ main {
 
 .about-info {
     width: 280px;
-    height: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 40px;
+    margin: 100px auto 0;
     font-size: 1em;
     line-height: 1.15em;
+    padding-bottom: 40px;
 }
 
 .about-info > h1 {
     font-size: 2.3em;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
-    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
+    font-family: 'Bitter', Arial, Helvetica, sans-serif;
 }
 
 /***Portfolio Content*****/
 .portfolio-info {
     width: 280px;
-    height: 100%;
     line-height: 1.18em;
-    margin-right: auto;
-    margin-left: auto;
-    margin-bottom: 40px;
+    margin: 100px auto 0;
+    padding-bottom: 40px;
 }
 
 .portfolio-title {
     font-size: 2.3em;
-    font-weight: 700;
+    font-weight: 400;
     text-align: center;
-    font-family: 'Josefin Slab', Arial, Helvetica, sans-serif;
+    font-family: 'Bitter', Arial, Helvetica, sans-serif;
     padding-bottom: 30px;
     border-bottom: 3px solid #5745A3;
 }
 
-.project {
-    margin-bottom: 20px;
+.project, .project-journal  {
+    margin-bottom: 30px;
 }
 
 .portfolio-images {
@@ -155,17 +150,25 @@ main {
     justify-content: space-around;
 }
 
+.project-image-hike,
+.project-mobile-journal,
+.project-image {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .project-image-hike {
     width: 40%;
-    border: 1px solid black;
     border-radius: 5px;
 }
 
 .portfolio-images-journal {
     width: 100%;
     height: 442px;
-    border: 2px solid black;
     border-radius: 5px;
+}
+
+.project-journal > h2 {
+    margin-top: 30px;
 }
 
 .project-mobile-journal {
@@ -175,7 +178,6 @@ main {
 
 .project-image {
     width: 90%;
-    border: 2px solid black;
     border-radius: 5px;
 }
 
@@ -208,7 +210,7 @@ strong {
     top:auto;
     width:1px;
     height:1px;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .buttons {
@@ -256,10 +258,11 @@ strong {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    margin-left: auto;
-    margin-right: auto;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 40px;
+    padding-bottom: 40px;
     width: 280px;
-    height: calc(100vh - 90px);
 }
 
 .contact-info > h1 {
@@ -272,6 +275,7 @@ strong {
     font-size: 2em;
     color: white;
     text-align: center;
+    margin-top: 0;
 }
 
 .contact-icons {
@@ -300,7 +304,7 @@ strong {
 
 footer {
     background-color: #5745A3;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     width: 100%;
     height: 30px;
@@ -333,8 +337,8 @@ footer {
     .about-info {
         font-size: 1.3em;
         line-height: 1.4em; 
-        width: 530px;
-        margin-top: 50px;
+        width: 80%;
+        margin-top: 100px;
     }
 
     .portfolio-images {
@@ -355,8 +359,6 @@ footer {
     .portfolio-images-journal {
         width: 60%;
         height: 502px;
-        border: 2px solid black;
-        border-radius: 5px;
         margin: 0 auto;
     }
 
@@ -369,7 +371,7 @@ footer {
         bottom: 90px;
         line-height: 3.2em;
         width: 530px;
-        height: 50vh;
+        min-height: 80vh;
     }
 
     .contact-info > h1 {
@@ -387,16 +389,19 @@ footer {
 }
 
 @media screen and (min-height: 520px) {
+
     .portfolio-images {
         margin-bottom: 50px;
-    }
-
-    .contact-info {
-        height: 75vh;
     }
 }
 
 @media screen and (min-width: 672px) {
+
+    .about-info {
+        margin-top: 100px;
+        width: 520px;
+    }
+
     .intro {
         height: 200px;
         width: 400px;
@@ -410,8 +415,12 @@ footer {
         font-size: 2.3em;
     }
 
-    .project {
+    .project, .project-journal {
         margin-bottom: 70px;
+    }
+
+    .portfolio-info {
+        margin-bottom: 0;
     }
 }
 
@@ -426,6 +435,10 @@ footer {
     .portfolio-images {
         height: 650px;
         width: 500px;
+    }
+
+    .project-mobile-journal {
+        max-width: 318px;
     }
 
     .portfolio-title {
@@ -448,7 +461,16 @@ footer {
 
 }
 
+@media screen and (min-height: 810px) {
+    .about-info {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+}
+
 @media screen and (min-width: 912px) {
+
     .intro {
         height: 230px;
         width: 480px;
@@ -471,18 +493,15 @@ footer {
     .project {
         height: 550px;
         width: 800px;
-        margin-bottom: 20px;
     }
 
     .portfolio-images-journal {
         float: left;
-        overflow: auto;
         width: 40%;
         height: 502px;
-        border: 2px solid black;
-        border-radius: 5px;
         margin: 0 20px 0 0;
         overflow-y: hidden;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
 
     .portfolio-images-hike {
