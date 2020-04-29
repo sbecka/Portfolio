@@ -1,7 +1,6 @@
 'use strict';
 
-//Have 4 links that 
-//need to change the header and divs in the <main>
+//Have 4 links need to change the header and divs in the <main>
 
 function clickHome() {
     $(".js-nav-home").click(function() {
@@ -31,7 +30,6 @@ function clickHome() {
 
 function clickAbout() {
     $(".js-nav-about").click(function () {
-        //console.log('about ran');
         $(this).addClass("selected");
         $(".js-nav-home").removeClass("selected");
         $(".js-nav-portfolio").removeClass("selected");
@@ -58,7 +56,6 @@ function clickAbout() {
 
 function clickPorfolio() {
     $(".js-nav-portfolio").click(function () {
-        //console.log("portfolio ran");
         $(this).addClass("selected");
         $(".js-nav-home").removeClass("selected");
         $(".js-nav-about").removeClass("selected");
@@ -71,7 +68,6 @@ function clickPorfolio() {
     });
 
     $(".js-nav-portfolio").keypress(function () {
-        //console.log("portfolio ran");
         $(this).addClass("selected");
         $(".js-nav-home").removeClass("selected");
         $(".js-nav-about").removeClass("selected");
@@ -86,7 +82,6 @@ function clickPorfolio() {
 
 function clickContact() {
     $(".js-nav-contact").click(function () {
-        //console.log("contact ran");
         $(this).addClass("selected");
         $(".js-nav-home").removeClass("selected");
         $(".js-nav-about").removeClass("selected");
@@ -99,7 +94,6 @@ function clickContact() {
     });
 
     $(".js-nav-contact").keypress(function () {
-        //console.log("contact ran");
         $(this).addClass("selected");
         $(".js-nav-home").removeClass("selected");
         $(".js-nav-about").removeClass("selected");
@@ -114,7 +108,6 @@ function clickContact() {
 
 
 function clickingOnNavLinks() {
-    //console.log('clickingOnNavLinks ran');
     $(".js-about").hide();
     $(".js-portfolio").hide();
     $(".js-contact").hide();

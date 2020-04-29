@@ -63,7 +63,7 @@ main {
     font-family: 'AbeeZee', Georgia, 'Times New Roman', Times, serif;
 }
 
-/*****Intro Headline Banner *****/
+/*****Intro Headline Banner on Home Page*****/
 .home {
     background-image: url('../images/background-lights.jpg');
     background-repeat: repeat; 
@@ -73,6 +73,7 @@ main {
     align-items: center;
     height: 100vh;
     background-color: #5745A3;
+    position: relative;
 }
 
 .intro {
@@ -100,6 +101,181 @@ main {
     font-size: 1.8em;
     font-weight: 400;
     margin: 0;
+}
+
+/***Glow Light Animation on Home Page***/
+.glow-light1,
+.glow-light2,
+.glow-light3,
+.glow-light4,
+.glow-light5,
+.glow-light6,
+.glow-light7,
+.glow-light8,
+.glow-light9,
+.glow-light10,
+.glow-light11,
+.glow-light12,
+.glow-light13  {
+    background-color: #F1E040;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 10px #F1E040;
+    position: absolute;
+}
+
+.glow-light1 {
+    animation: glowFloatRight 6s ease-in-out infinite;
+    top: 120px;
+    left: 40px;
+}
+
+.glow-light2 {
+    animation: glowFloatLeft 5s ease-in-out infinite;
+    top: 140px;
+    left: 35%;
+}
+
+.glow-light3 {
+    animation: glowFloatRight 7s ease-in-out infinite;
+    top: 140px;
+    right: 35%;
+}
+
+.glow-light4 {
+    animation: glowFloatLeft 6s ease-in-out infinite;
+    top: 110px;
+    right: 60px;
+}
+
+.glow-light5 {
+    animation: glowFloatRight 7s ease-in-out infinite;
+    left: 60px;
+}
+
+.glow-light6 {
+    animation: glowFloat 5s ease-in-out infinite;
+    left: 30%;
+}
+
+.glow-light7 {
+    animation: glowFloat 6s ease-in-out infinite;
+}
+
+.glow-light8 {
+    animation: glowFloat 7s ease-in-out infinite;
+    right: 30%;
+}
+
+.glow-light9 {
+    animation: glowFloatLeft 7s ease-in-out infinite;
+    right: 60px;
+}
+
+.glow-light10 {
+    animation: glowFloatLeft 7s ease-in-out infinite;
+    bottom: 100px;
+    left: 60px;
+}
+
+.glow-light11 {
+    animation: glowFloat 6s ease-in-out infinite;
+    bottom: 180px;
+    left: 35%;
+}
+
+.glow-light12 {
+    animation: glowFloatLeft 6s ease-in-out infinite;
+    bottom: 170px;
+    right: 35%;
+}
+
+.glow-light13 {
+    animation: glowFloatLeft 5s ease-in-out infinite;
+    bottom: 130px;
+    right: 60px;
+}
+
+@keyframes glowFloat {
+	from {
+        opacity: 0;
+        transform: translateY(0px);
+    }
+    25% {
+        background-color: #E9DE80;
+        box-shadow: 0 0 10px 10px #E9DE80;
+        opacity: 0.5;
+	}
+	50% {
+        background-color: #F1E040;
+        box-shadow: 0 0 10px 10px #F1E040;
+        opacity: 1;
+        transform: translateY(20px);
+    }
+    75% {
+        background-color: #E9DE80;
+        box-shadow: 0 0 10px 10px #E9DE80;
+        opacity: 0.5;
+	}
+	to {
+        opacity: 0;
+        transform: translateY(0px);
+	}
+}
+
+@keyframes glowFloatLeft {
+	from {
+        opacity: 0;
+        transform: translate(10px, 0px);
+    }
+    25% {
+        background-color: #E9DE80;
+        box-shadow: 0 0 10px 10px #E9DE80;
+        opacity: 0.5;
+	}
+	50% {
+        background-color: #F1E040;
+        box-shadow: 0 0 10px 10px #F1E040;
+        opacity: 1;
+        transform: translate(20px, -40px);
+    }
+    75% {
+        background-color: #E9DE80;
+        box-shadow: 0 0 10px 10px #E9DE80;
+        opacity: 0.5;
+	}
+	to {
+        opacity: 0;
+        transform: translate(10px, 0px);
+	}
+}
+
+@keyframes glowFloatRight {
+	from {
+        opacity: 0;
+        transform: translate(10px, 0px);
+    }
+    25% {
+        background-color: #E9DE80;
+        box-shadow: 0 0 10px 10px #E9DE80;
+        opacity: 0.5;
+	}
+	50% {
+        background-color: #F1E040;
+        box-shadow: 0 0 10px 10px #F1E040;
+        opacity: 1;
+        transform: translate(20px, 40px);
+    }
+    75% {
+        background-color: #E9DE80;
+        box-shadow: 0 0 10px 10px #E9DE80;
+        opacity: 0.5;
+	}
+	to {
+        opacity: 0;
+        transform: translate(10px, 0px);
+	}
 }
 
 /***About Me Content********/
@@ -136,8 +312,21 @@ main {
     border-bottom: 3px solid #5745A3;
 }
 
+.project-tallyit {
+    margin-bottom: 30px;
+}
+
 .project, .project-journal  {
     margin-bottom: 30px;
+}
+
+.portfolio-image-tallyit {
+    text-align: center;
+}
+
+.project-image-tallyit {
+    width: 90%;
+    border-radius: 5px;
 }
 
 .portfolio-images {
@@ -150,6 +339,7 @@ main {
     justify-content: space-around;
 }
 
+.project-image-tallyit,
 .project-image-hike,
 .project-mobile-journal,
 .project-image {
