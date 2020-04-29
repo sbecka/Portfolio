@@ -94,6 +94,8 @@ main {
     margin: 0;
     text-align: center;
     animation: fadeInAnimation 4s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 .intro > h2 {
@@ -101,7 +103,9 @@ main {
     font-size: 1.8em;
     font-weight: 400;
     margin: 0;
-    animation: fadeInAnimation 7s ease;
+    animation: fadeInAnimation 6s ease;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 
 @keyframes fadeInAnimation {
@@ -334,7 +338,6 @@ main {
 }
 
 .project-image-tallyit {
-    width: 90%;
     border-radius: 5px;
     max-height: 545px;
 }
@@ -693,6 +696,7 @@ footer {
 
     .project-tallyit {
         height: 650px;
+        max-width: 800px;
     }
 
     .portfolio-image-tallyit {
@@ -791,10 +795,6 @@ footer {
     .portfolio-images {
         height: 650px;
         width: 500px;
-    }
-
-    .portfolio-info {
-        width: 1000px;
     }
 
     .contact-info {
