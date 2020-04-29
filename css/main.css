@@ -118,8 +118,8 @@ main {
 .glow-light12,
 .glow-light13  {
     background-color: #F1E040;
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
     box-shadow: 0 0 10px 10px #F1E040;
     position: absolute;
@@ -312,12 +312,10 @@ main {
     border-bottom: 3px solid #5745A3;
 }
 
-.project-tallyit {
-    margin-bottom: 30px;
-}
-
-.project, .project-journal  {
-    margin-bottom: 30px;
+.project,
+.project-tallyit, 
+.project-journal  {
+    margin-bottom: 50px;
 }
 
 .portfolio-image-tallyit {
@@ -327,6 +325,7 @@ main {
 .project-image-tallyit {
     width: 90%;
     border-radius: 5px;
+    max-height: 545px;
 }
 
 .portfolio-images {
@@ -343,15 +342,15 @@ main {
 .project-image-hike,
 .project-mobile-journal,
 .project-image {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
 }
 
 .project-image-hike {
-    width: 40%;
+    width: 43%;
     border-radius: 5px;
 }
 
-.portfolio-images-journal {
+.portfolio-image-journal {
     width: 100%;
     height: 442px;
     border-radius: 5px;
@@ -583,13 +582,23 @@ footer {
     .portfolio-images {
         margin-bottom: 50px;
     }
+
+    .project-image-tallyit {
+        width: 260px;
+    }
+
+    .project,
+    .project-tallyit, 
+    .project-journal  {
+        margin-bottom: 100px;
+    }
 }
 
 @media screen and (min-width: 672px) {
 
     .about-info {
         margin-top: 100px;
-        width: 520px;
+        width: 490px;
     }
 
     .intro {
@@ -605,10 +614,6 @@ footer {
         font-size: 2.3em;
     }
 
-    .project, .project-journal {
-        margin-bottom: 70px;
-    }
-
     .portfolio-info {
         margin-bottom: 0;
     }
@@ -617,9 +622,9 @@ footer {
 @media screen and (min-width: 790px) {
 
     .about-info {
-        font-size: 1.3em;
+        font-size: 1.2em;
         line-height: 1.5em;
-        width: 700px;
+        width: 510px;
     }
 
     .portfolio-images {
@@ -651,15 +656,11 @@ footer {
 
 }
 
-@media screen and (min-height: 810px) {
-    .about-info {
-        display: flex;
-        flex-direction: column;
-        padding-bottom: 0;
-    }
-}
-
 @media screen and (min-width: 912px) {
+
+    .buttons {
+        width: 340px;
+    }
 
     .intro {
         height: 230px;
@@ -674,35 +675,62 @@ footer {
         font-size: 2.6em;
     }
 
+    .project {
+        height: 550px;
+        width: 800px;
+    }
+
+    .project-tallyit {
+        height: 650px;
+    }
+
+    .portfolio-image-tallyit {
+        float: right;
+        margin-left: 20px;
+    }
+
+    .project-image-tallyit {
+        max-height: 648px;
+        width: 320px;
+    }
+
     .project-journal {
         height: 610px;
         width: 890px;
         margin: 0 auto 20px;
     }
 
-    .project {
-        height: 550px;
-        width: 800px;
-    }
-
-    .portfolio-images-journal {
+    .portfolio-image-journal {
         float: left;
         width: 319px;
         height: 502px;
         margin: 0 40px 0 0;
         overflow-y: hidden;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        box-shadow: 0 4px 8px 0 #00000033, 0 6px 20px 0 #00000030;
+    }
+
+    .project-journal > .project-description {
+        margin-right: 40px;
+    }
+
+    .project-hike {
+        height: 600px;
+    }
+
+    .project-hike > .buttons {
+        margin-left: 0;
+        margin-right: auto;
     }
 
     .portfolio-images-hike {
         float: right;
-        height: 460px;
-        width: 450px;
+        height: 470px;
+        width: 460px;
     }
 
     .project-image-hike {
-        height: 450px;
-        width: 200px;
+        height: 470px;
+        width: 215px;
     }
 
     .portfolio-images {
@@ -716,10 +744,6 @@ footer {
         font-size: 1.3em;
         width: 800px;
     }
-
-    .buttons {
-        width: 40%;
-    }
 }
 
 @media screen and (min-width: 1530px) {
@@ -732,15 +756,7 @@ footer {
         font-size: 2em;
     }
 
-    .about-info {
-        font-size: 1.3em;
-        line-height: 1.5em;
-        width: 700px;
-    }
-
     .portfolio-images-hike {
-        float: right;
-        height: 460px;
         width: 530px;
     }
 
@@ -764,16 +780,10 @@ footer {
     .portfolio-images {
         height: 650px;
         width: 500px;
-        float: left;
     }
 
     .portfolio-info {
-        font-size: 1.3em;
         width: 1000px;
-    }
-
-    .buttons {
-        width: 40%;
     }
 
     .contact-info {
@@ -786,27 +796,6 @@ footer {
 
     .about-info {
         font-size: 1.3em;
-        line-height: 1.5em;
         width: 700px;
     }
-
-    .portfolio-images {
-        height: 650px;
-        width: 500px;
-        float: left;
-    }
-
-    .portfolio-info {
-        font-size: 1.3em; 
-        width: 1000px;
-    }
-
-    .buttons {
-        width: 40%;
-    }
-
-    .contact-info {
-        width: 800px;
-    }
-
 }
