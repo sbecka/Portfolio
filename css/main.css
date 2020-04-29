@@ -87,13 +87,13 @@ main {
     text-shadow:1px 1px 2px black, 0 0 25px black, 0 0 5px black;
 }
 
-
 .intro > h1 {
     font-family: 'Delius', 'Arial', 'sans-serif';
     color: white;
     font-size: 2.9em;
     margin: 0;
     text-align: center;
+    animation: fadeInAnimation 4s ease;
 }
 
 .intro > h2 {
@@ -101,6 +101,17 @@ main {
     font-size: 1.8em;
     font-weight: 400;
     margin: 0;
+    animation: fadeInAnimation 7s ease;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 /***Glow Light Animation on Home Page***/
