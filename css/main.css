@@ -64,7 +64,10 @@ main {
 }
 
 /*****Intro Headline Banner on Home Page*****/
+
 .home {
+    overflow-y: scroll;
+    -ms-overflow-style: none;
     background-image: url('../images/background-lights.jpg');
     background-repeat: repeat; 
     display: flex;
@@ -74,6 +77,10 @@ main {
     height: 100vh;
     background-color: #5745A3;
     position: relative;
+}
+
+.home::-webkit-scrollbar {
+    display: none;
 }
 
 .intro {
