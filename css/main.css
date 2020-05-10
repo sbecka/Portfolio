@@ -66,8 +66,7 @@ main {
 /*****Intro Headline Banner on Home Page*****/
 
 .home {
-    overflow-y: scroll;
-    -ms-overflow-style: none;
+    overflow: hidden;
     background-image: url('../images/background-lights.jpg');
     background-repeat: repeat; 
     display: flex;
