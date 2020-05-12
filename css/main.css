@@ -520,6 +520,11 @@ strong {
     transition: 0.3s;
 }
 
+.contact-icon {
+    color: #5745A3;
+    font-size: 1.2em;
+}
+
 /****Footer*****/
 
 footer {
