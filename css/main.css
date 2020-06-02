@@ -7,6 +7,7 @@ body {
     margin: 0;
     min-height: 100vh;
     position: relative;
+    letter-spacing: 0.45px;
 }
 
 /***Navigation Bar*****/
@@ -318,7 +319,7 @@ main {
 
 /***Portfolio Content*****/
 .portfolio-info {
-    width: 280px;
+    width: 289px;
     line-height: 1.18em;
     margin: 100px auto 0;
     padding-bottom: 40px;
@@ -371,12 +372,13 @@ main {
 }
 
 .portfolio-image-journal {
-    width: 100%;
+    width: 95%;
     height: 442px;
     border-radius: 5px;
+    margin: 0 auto;
 }
 
-.project-journal > h2 {
+.project h2 {
     margin-top: 30px;
 }
 
@@ -395,8 +397,25 @@ main {
     font-size: 1.5em;
 }
 
+.tech-heading {
+    display: inline;
+    color: #000;
+    margin: 3px;
+}
+
 .technology {
     color: white;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tech {
+    background: #5745A3;
+    padding: 3px 5px;
+    margin: 3px;
+    border-radius: 3px;
+    letter-spacing: 0.6px;
 }
 
 .fa-react, 
@@ -765,6 +784,7 @@ footer {
 
     .project-journal > .project-description {
         margin-right: 40px;
+        font-size: 1.3em;
     }
 
     .project-journal > .buttons {
