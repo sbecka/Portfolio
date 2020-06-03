@@ -335,6 +335,7 @@ main {
 }
 
 .project,
+.project-markdown,
 .project-tallyit, 
 .project-journal  {
     margin-bottom: 50px;
@@ -349,6 +350,11 @@ main {
     max-height: 545px;
 }
 
+.project-image-markdown {
+    border-radius: 5px;
+    width: 100%;
+}
+
 .portfolio-images {
     display: flex;
     justify-content: center;
@@ -359,6 +365,7 @@ main {
     justify-content: space-around;
 }
 
+.project-image-markdown,
 .project-image-tallyit,
 .project-image-hike,
 .project-mobile-journal,
@@ -416,6 +423,13 @@ main {
     margin: 3px;
     border-radius: 3px;
     letter-spacing: 0.6px;
+    transition: 0.3s ease-in;
+}
+
+.tech:hover {
+    cursor: pointer;
+    background: transparent;
+    color: #000;
 }
 
 .fa-react, 
@@ -643,6 +657,7 @@ footer {
     }
 
     .project,
+    .project-markdown,
     .project-tallyit, 
     .project-journal  {
         margin-bottom: 100px;
@@ -748,14 +763,39 @@ footer {
         text-align: center;
     }
 
+    .project-image-markdown {
+        width: 52%;
+        float: left;
+        margin: 0 22px 5px 0;
+    }
+
+    .project-markdown {
+        max-width: 800px;
+        height: 570px;
+    }
+
+    .project-markdown > .buttons {
+        margin-left: auto;
+        margin-right: 20px;
+    }
+
     .quiz-project {
-        height: 650px;
+        height: 800px;
         width: 800px;
     }
 
+    .quiz-project > .buttons {
+        margin-right: 20px;
+        margin-left: auto;
+    }
+
     .project-tallyit {
-        height: 680px;
+        height: 800px;
         max-width: 800px;
+    }
+
+    .project-tallyit > .buttons {
+        margin: 0 auto 0 0;
     }
 
     .portfolio-image-tallyit {
@@ -769,8 +809,8 @@ footer {
     }
 
     .project-journal {
-        height: 660px;
-        width: 890px;
+        height: 800px;
+        width: 800px;
         margin: 0 auto 80px;
     }
 
@@ -784,16 +824,15 @@ footer {
 
     .project-journal > .project-description {
         margin-right: 40px;
-        font-size: 1.3em;
     }
 
     .project-journal > .buttons {
-        margin-right: 145px;
+        margin-right: 70px;
         margin-left: auto;
     }
 
     .project-hike {
-        height: 750px;
+        height: 820px;
     }
 
     .project-hike > .buttons {
