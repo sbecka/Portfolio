@@ -539,6 +539,7 @@ strong {
     justify-content: space-around;
     overflow-wrap: break-word;
     word-wrap: break-word;
+    line-height: 1.4em;
 }
 
 .contact-links > li > a {
@@ -700,6 +701,11 @@ footer {
 
     .contact-links > li {
         display: block;
+    }
+
+    .contact-info > p {
+        max-width: 530px;
+        margin: 0 auto;
     }
 }
 
